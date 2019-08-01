@@ -1,0 +1,75 @@
+
+<html>
+<head>
+<style>
+input
+ { 
+   color:blue;
+   letter-spacing:3pt;
+   font-size:14pt;
+   
+   
+   
+   
+ }
+
+input.button
+ { 
+   color:red;
+   letter-spacing:3pt;
+   font-size:14pt;
+   outline-style:solid;
+   outline-color:lightblue;
+   
+   
+ }
+
+
+form { border: thick dotted red;  text-align:left; width:40%; height:200px;}
+
+body {color:blue; font-weight:bold;}
+
+select, input {color:red; font-weight:bold;}
+
+h1,h3
+{
+color:brown;
+text-align:center;
+}
+
+
+</style>
+</head>
+<body>
+<h1> Infy Bank </h1>
+<h3> Fund Transfer </h3>
+<center>
+<form >
+<center>
+<table border="0" cellspacing="10">
+<tr>
+<td>
+<label> PayTo   </label></td><td><select name="payto"><option>Ryan</option><option>Jack</option></select><br>
+</td>
+<tr>
+<td>
+<label> Pay from(Account No:) </label> </td><td> <input type="number" value="102734254"><br>
+</td>
+</tr>
+<tr>
+<td>
+<label> Amount      </label>  </td><td>         <input type="number" name="amount"><br>
+</td>
+</tr>
+<tr>
+<td>
+<label> Transaction Remark </label> </td><td>   <input type="text" name="remark"><br>
+</td>
+</tr>
+</table>
+</center>
+<center><input class="button" type="submit" value ="Transfer Fund"></center>
+</form>
+</center>
+</body>
+</html>

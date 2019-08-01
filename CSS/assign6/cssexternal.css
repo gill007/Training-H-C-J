@@ -1,0 +1,27 @@
+td.even
+{
+  background-color:lightblue;
+}
+
+h1
+{
+  color:red;
+  text-align:center;
+  font-size:40px;
+  
+}
+
+th
+{
+background-color:orange;
+}
+
+table
+{
+font-size:20px;
+}
+
+td.odd
+{
+  background-color:lightgreen;
+}
