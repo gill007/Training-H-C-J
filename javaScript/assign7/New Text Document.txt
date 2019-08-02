@@ -1,0 +1,19 @@
+<html>
+<head>
+<script language="JavaScript">
+
+function answer()
+{
+ 
+}
+</script>
+</head>
+<body>
+<center> <h1><font text-color="green"> Questions</font></h1>
+ <form name="frm1">
+  
+   <input type="button" value="Add" name="but1" onClick="add()">
+</form>
+
+</body>
+</html>

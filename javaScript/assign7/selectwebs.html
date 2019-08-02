@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="JavaScript">
+
+function disp()
+{  ind=document.f1.webs.selectedIndex;
+   location.replace(document.f1.webs.options[ind].value);
+   
+}
+</script>
+</head>
+<body>
+
+ <form name="f1">
+ <select name="webs" onchange="disp()">
+  <option value="https://www.google.com">https://google.com
+  <option value="https://yahoo.com">https://yahoo.com
+  <option value="https://gmail.com">https://gmail.com
+  <option value="https://imcs.com">https://imcs.com
+ </select
+   
+   
+</form>
+
+</body>
+</html>

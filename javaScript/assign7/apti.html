@@ -1,0 +1,48 @@
+<html>
+<head>
+<script language="JavaScript">
+
+function answer()
+{
+ for(i=0;i<document.frm1.rad.length;i++)
+   {
+     if(document.frm1.rad[i].checked==true)
+       {
+         alert("Value selected");
+       }
+
+    }
+ 
+}
+
+function ans()
+{
+   for(i=0;i<document.frm1.rad.length;i++)
+   {
+     if(document.frm1.rad[i].checked==true)
+       {
+        if(document.frm1.rad[i].value==1000.00)
+          alert("Correct Answer");
+        else
+            alert("Incorrect Answer");
+         }  
+
+    }
+ 
+  
+}
+</script>
+</head>
+<body>
+<center> <h1><font color=green> Questions</font></h1>
+<h4><font color=red> What is the Minimum balance for a Salary Account in Infy Bank</font> </h4>
+<form name="frm1">
+   <input type="radio" name="rad" value=1000.00 onClick="answer()">1000.00
+   <input type="radio" name="rad" value=0.00 onClick="answer()">0.00
+   <input type="radio" name="rad" value=100.00 onClick="answer()">100.00
+   <input type="radio" name="rad" value="Not Answered" onClick="answer()">NOT ANSWERED<br>
+   <input type="button" value="Submit" name="but1" onClick="ans()">
+</form>
+</center>
+</body>
+</html>

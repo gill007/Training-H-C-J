@@ -1,0 +1,38 @@
+<html>
+<head>
+<script language="JavaScript">
+
+function add()
+{
+  document.frm1.result.value=parseInt(document.frm1.num1.value) + parseInt(document.frm1.num2.value);
+}
+
+function sub()
+{
+  document.frm1.result.value=parseInt(document.frm1.num1.value) - parseInt(document.frm1.num2.value);
+}
+
+function mult()
+{
+  document.frm1.result.value=parseInt(document.frm1.num1.value) * parseInt(document.frm1.num2.value);
+}
+
+function div()
+{
+  document.frm1.result.value=parseInt(document.frm1.num1.value) / parseInt(document.frm1.num2.value);
+}
+</script>
+</head>
+<body>
+ <form name="frm1">
+   Num1 <input type="text" name="num1"><br>
+   Num2 <input type="text" name="num2"><br>
+   Result <input type="text" name="result" value=""><br>
+   <input type="button" value="Add" name="but1" onClick="add()"><br>
+   <input type="button" value="Sub" name="but2" onClick="sub()"><br>
+   <input type="button" value="Mult" name="but3" onClick="mult()"><br>
+   <input type="button" value="Div" name="but4" onClick="div()"><br>
+</form>
+
+</body>
+</html>
