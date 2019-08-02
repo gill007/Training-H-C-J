@@ -1,0 +1,26 @@
+<html>
+<head>
+<script language="JavaScript">
+
+var months=new Array(92,23,2,44,-1,100,1001);
+document.write("Length of Array:"+months.length+"<br>");
+
+var max1=-9999;
+var min1=9999;
+for(i=0;i<months.length;i++)
+{
+ if(max1<=months[i])
+   max1=months[i]; 
+ if(min1>=months[i])
+   min1=months[i];
+}
+
+document.write("Biggest and SmallestNumber:"+max1+" "+min1);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
