@@ -1,0 +1,51 @@
+<html>
+<head>
+<script language="JavaScript">
+
+var sec=0;
+var min=0;
+var hour=0;
+var t;
+
+
+function start()
+{
+t=setTimeout(add,1000);
+}
+
+function add()
+{
+
+ sec++;
+ if(sec>=60){
+    sec=0;
+    min++;
+    if(min>=60)
+     {
+      min=0;
+       hour++;
+       } 
+   }
+document.getElementById("st1").value=((hour<10)?("0"+hour):hour)+":"+((min<10)?("0"+min):min)+":"+((sec<10)?("0"+sec):sec);
+start();
+}
+
+function stop()
+{
+clearTimeout(t);
+}
+
+
+</script>
+
+</head>
+<body>
+<center> <h1><font text-color="green"> Stop Watch</font></h1>
+ <form name="frm1">
+ <input type="text" id="st1" value=""><br><br>
+ <input type="button" value="Start" name="btn1" onClick="start()">
+ <input type="button" value="Stop" name="btn2" onClick="stop()">
+ </form>
+</center>
+</body>
+</html>

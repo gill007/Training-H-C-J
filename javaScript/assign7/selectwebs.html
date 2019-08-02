@@ -4,7 +4,7 @@
 
 function disp()
 {  ind=document.f1.webs.selectedIndex;
-   location.replace(document.f1.webs.options[ind].value);
+   location.assign(document.f1.webs.options[ind].value);
    
 }
 </script>
@@ -12,7 +12,8 @@ function disp()
 <body>
 
  <form name="f1">
- <select name="webs" onchange="disp()">
+ <select name="webs" onChange="disp()">
+  <option value="nothing" selected="selected"> Select a site
   <option value="https://www.google.com">https://google.com
   <option value="https://yahoo.com">https://yahoo.com
   <option value="https://gmail.com">https://gmail.com

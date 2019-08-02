@@ -1,0 +1,88 @@
+
+<html>
+<head>
+<style>
+div
+{
+background-color:lightblue;
+width:400;
+height:200;
+
+}
+
+div.ha
+{
+background-color:lightgreen;
+width:100%;
+height:100%;
+
+}
+</style>
+<script language="JavaScript">
+
+var patt1=/[A-z]/g;
+function eval()
+{
+  if(isFinite(document.frm1.cstName.value))
+   {
+    alert("Must start with a letter");
+    }
+  
+  if(document.frm1.cstName.value.length<3)
+    alert(" Customer NAME must have more than 3 characters");
+
+  if(document.frm1.dob.value.length==0)
+   {
+    alert("Date of Birth must not be empty");
+    }
+
+  if(isFinite(document.frm1.email.value))
+   {
+    alert("Email must not be empty");
+    }
+    
+  if(document.frm1.email.value.indexOf("@")==-1)
+     {
+    alert("Email must have @");
+    }
+    
+  if(document.frm1.email.value.indexOf(".")==-1)
+     {
+    alert("Email must have '.'");
+    }
+
+   if((document.frm1.dob.value.length)!=0)
+   {
+    if((document.frm1.dob.value).match(patt1)!=null)
+      alert("Dob must not contain characters like:"+(document.frm1.dob.value).match(patt1));
+   }   
+
+   
+
+ 
+
+ 
+}
+
+</script>
+</head>
+<body >
+<center>
+<div class="ha">
+ <h1><font color="brown"> Infy Bank</font></h1>
+<h3><font color="brown"> Customer Registration</font></h3>
+ <div >
+<form name="frm1"> 
+<table cellspacing="12">
+ <tr><td>Customer Name<font color="red">(*)</font> </td><td><input  type="text" name="cstName" ></td></tr>
+ <tr><td>Date of Birth<font color="red">(*)</font></td>  <td>  <input type="text" name="dob" ></td></tr>
+ <tr><td>Email<font color="red">(*)</font></td><td> <input  type="text" name="email" ></td></tr>
+ <tr ><td ><font color="red">(*)Mandatory</font></td><td> <input type="button" value="Submit" onClick=eval()></td></tr>
+ </table>
+</form>
+ </div>
+
+</div>
+</center>
+</body>
+</html>
