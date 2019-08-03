@@ -1,0 +1,1 @@
+select * from emp where deptno not in (20,30,40);
