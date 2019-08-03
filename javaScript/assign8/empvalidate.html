@@ -1,0 +1,120 @@
+<html>
+<head>
+<script href>
+function isEmpty(x)
+{
+  if(x.length==0)
+    return 0;
+  else
+    return 1;
+}
+
+
+function onlySpaces(x)
+{
+ if(x.trim().length==0)
+  return 0;
+ else
+  return 1;
+  
+}
+
+function onlyDigits(x)
+{
+check1=/[^0-9]/g;
+var res=x.trim().match(check1);
+if(res==null)
+return 0;
+else
+return 1;
+}
+
+function onlyAlphabets(x)
+{
+check2=/[^A-Z]/gi;
+var res1=x.trim().match(check2);
+if(res1==null)
+return 0;
+else
+return 1;
+
+}
+
+function validateEmpDetails()
+{
+  empty=isEmpty(document.frm1.empno.value);
+  space=onlySpaces(document.frm1.empno.value);
+  digits=onlyDigits(document.frm1.empno.value);
+  
+  
+  if(empty==0)
+   {
+    alert("Input is Empty");
+    return false;
+    }
+  else
+    {
+      if(space==0)
+        {
+         alert("It has all spaces");
+         return false; 
+         }
+       else
+        {
+           if(digits==0)
+             {
+               alert("It has only digits");
+                 return false; 
+               }
+
+
+         }
+    }
+
+  empty1=isEmpty(document.frm1.empname.value);
+  space1=onlySpaces(document.frm1.empname.value);
+  alpha1=onlyAlphabets(document.frm1.empname.value);
+
+ if(empty1==0)
+   {
+    alert("EName is Empty");
+    return false;
+    }
+  else
+    {
+      if(space1==0)
+        {
+         alert("Ename has all spaces");
+         return false; 
+         }
+       else
+        {
+           if(alpha1==0)
+             {
+               alert("Ename has only alphabets ");
+                 return false; 
+               }
+             else
+                return true;
+
+
+         }
+    }
+
+
+  
+
+}
+
+
+
+</script>
+</head>
+<body>
+<form name="frm1" action="C:\Users\adesh\Desktop\Training\javaScript\assign8\display.html" onsubmit="return validateEmpDetails()">
+ Employee Number <input type="text" name="empno" ><br><br>
+ Employee Name <input type="text" name="empname" ><br><br>
+ <input type="submit" value="Submit" >
+</form>
+</body>
+</html>
