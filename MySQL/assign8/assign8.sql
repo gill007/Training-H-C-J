@@ -34,3 +34,6 @@ select max(sal) as 'Max',min(sal) as 'Min', avg(sal) as Avg from  emp;
 
 select max(sal) from emp where job='Salesman';
 
+
+
+

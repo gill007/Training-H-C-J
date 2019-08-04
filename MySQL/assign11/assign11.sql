@@ -1,8 +1,10 @@
+use assign7;
+
 select count(ename),avg(sal) from emp where deptno=20 group by deptno;
 
 select ename,sal,(sal*0.1) as 'PF' from emp;
 
-SELECT ename from emp where (year(curdate())-year(hiredate)>25) ;
+select ename from emp where date_sub(date(sysdate()), INTERVAL 25 YEAR)>hiredate;
 
 select * from emp order by sal;
 
