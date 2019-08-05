@@ -44,6 +44,8 @@ Insert into Batch_Schedule values ('Batch1', 'OVB', '2008-2-21', '2008-2-28');
 Insert into Batch_Schedule values ('Batch2', 'GPF', '2008-1-10', '2008-1-20');
 Insert into Batch_Schedule values ('Batch3', 'GPF', '2008-1-21', '2008-2-1');
 Insert into Batch_Schedule values ('Batch3', 'JJA', '2008-2-2', '2008-2-8');
+Insert into Batch_Schedule values ('Batch2', 'OVB', '2008-2-2', '2008-2-8');
+Insert into Batch_Schedule values ('Batch1', 'JJE', '2008-2-2', '2008-2-8');
 
 select * from batch_schedule;
 
@@ -61,8 +63,11 @@ Insert into Feedback values (2, 'GDB','Batch1',4.65);
 Insert into Feedback values (3, 'ODB','Batch1',4.51);
 Insert into Feedback values (4, 'OVB','Batch1',4.68);
 Insert into Feedback values (5, 'GPF','Batch2',4.28);
-Insert into Feedback values (1, 'GPF','Batch3',4.28);
-Insert into Feedback values (3, 'JJA','Batch3',4.32);
+Insert into Feedback values (1, 'ODB','Batch1',4.28);
+Insert into Feedback values (1, 'GDB','Batch1',4.32);
+Insert into Feedback values (1, 'OVB','Batch1',4.32);
+Insert into Feedback values (1, 'JJE','Batch1',4.32);
+Insert into Feedback values (1, 'JJA','Batch3',4.32);
 
 select * from feedback;
 
