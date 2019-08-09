@@ -4,7 +4,7 @@ select t.trainername from trainer t, feedback f where t.trainerid=f.trainerid gr
 
 select t.trainerid,t.trainername,count(distinct f.CourseID) as 'Number of Course' from trainer t, feedback f where t.trainerid=f.trainerid group by trainerid;
 
-select t.trainerid,t.trainername,(select coursename from course_details d where d.CourseID=f.CourseID) as 'Course Name',(select count(courseid) from batch_schedule b where f.CourseID=b.courseID)as 'Number of times Taught' from trainer t, feedback f where t.trainerid=f.trainerid;
+select t.trainerid,t.trainername,(select coursename from course_details d where d.CourseID=f.CourseID) as 'Course Name',(select count(courseid) from batch_schedule b where f.CourseID=b.courseID)as 'Number of times Taught' from trainer t, feedback f where t.trainerid=f.trainerid; 
 
 select BatchName,CourseID,(End_Date-Start_Date) as 'Duration in Days' from batch_schedule;
 
