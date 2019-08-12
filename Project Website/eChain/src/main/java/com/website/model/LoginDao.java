@@ -1,4 +1,4 @@
-package com.jdbcConnection.Connection;
+package com.website.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,27 +6,40 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MysqlConnection {
+import com.website.model.*;
 
-	public static void main(String[] args) throws SQLException {
-		// TODO Auto-generated method stub
-		String username="adesh";
-		Statement st=null;
+public class LoginDao {
+	
+	private String username;
+	private String password;
+
+
+	
+	public LoginDao(String i, String j) {
+		// TODO Auto-generated constructor stub
+		this.username=i;
+		this.password=j;
+	}
+
+	public LoginBean getData()
+	{
+		LoginBean m= new LoginBean();
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/website?autoReconnect=true&useSSL=false","root","adesh");
-			st=con.createStatement();
+			Statement st=con.createStatement();
 			
-			String query="Select * from login where username='"+username+"';";
-			System.out.println(query);
+			String query="Select * from login where username='"+username+"' and password='"+password + "';";
+			
 			ResultSet rs=st.executeQuery(query);
-			System.out.println("hello");
+			
 		
 			
 			while(rs.next())
 			{
-				System.out.println(rs.getString(1)+" "+rs.getString(2));
+				m.setName(rs.getString(1));
+			    m.setPassword(rs.getString(2));
 			}
 			rs.close();
 			st.close();
@@ -39,15 +52,7 @@ public class MysqlConnection {
 		catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Check url,username,password");
-			
-			
-			
+		}
+		return m;
 	}
-		finally {
-	        if (st != null) { st.close(); }
-	    }
-		
-
-	}
-
 }

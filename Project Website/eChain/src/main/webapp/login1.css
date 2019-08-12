@@ -7,6 +7,7 @@ background:#F1C40F;
 {
 width:500px;
 padding:40px;
+margin-top:100px;
 position:absolute;
 top:50%;
 left:50%;
@@ -21,11 +22,13 @@ border-radius:20px;
 color:#58D68D;
 font-weight:500;
 
+
 }
 
 .box input[type="text"], .box input[type="password"]
 {
 border:0;
+
 background:#BFC9CA;
 outline:none;
 display:block;
@@ -172,12 +175,16 @@ width:100%;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
+    outline-color:#58D68D;
 }
+
+
+
 .dropbtn {
     background-color: transparent;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 14px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
   }
@@ -213,5 +220,5 @@ width:100%;
     background-color:#eee;
     color:#23527c;
   }
-
   
+ 

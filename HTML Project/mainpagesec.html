@@ -2,7 +2,7 @@
 <head>
   <title>Main Page</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="loginreg.css" >
+  <link rel="stylesheet" href="login1.css" >
   
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   
@@ -12,7 +12,8 @@
 <nav class="navbar navbar-light" style="background-color:#58D68D ;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">e-Chain</a>
+      <a class="navbar-brand" href="#">e-Chain  Welcomes You <%=(String) session.getAttribute("loginUsername") %></a>
+      
     </div>
  
     <ul class="nav navbar-nav navbar-right">
@@ -123,6 +124,10 @@
       </div>
 
 </div>
+
+<% ArrayList<MainBean> md=session.getAttribute("loginUsername");
+
+%>
 
 
 </body>

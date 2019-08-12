@@ -1,6 +1,6 @@
 package com.website.model;
 
-public class MainClass {
+public class LoginBean {
 
 	private String name;
 	private String password;
