@@ -1,0 +1,25 @@
+package com.wellsbank.tableperclass;
+
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TC_SavingsAccount")
+public class SavingsAccount extends Account {
+	private int minBalance;
+	public int getMinBalance() {
+		return minBalance;
+	}
+	public void setMinBalance(int minBalance) {
+		this.minBalance = minBalance;
+	}
+	public double getInterestRate() {
+		return interestRate;
+	}
+	public void setInterestRate(double interestRate) {
+		this.interestRate = interestRate;
+	}
+	private double interestRate;
+
+}
