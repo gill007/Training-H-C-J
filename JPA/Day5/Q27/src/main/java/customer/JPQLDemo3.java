@@ -8,7 +8,7 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-public class JPQLDemo2 {
+public class JPQLDemo3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,12 +16,12 @@ public class JPQLDemo2 {
 		EntityManager em=emf.createEntityManager();
 		
 		try
-		{   int customerId=1001;
+		{  
 			EntityTransaction et=em.getTransaction();
 			et.begin();
 			
-			Query query = em.createQuery("select c from Customer c where c.customerId=?1");
-			query.setParameter(1, customerId);
+			Query query = em.createQuery("select c from Customer c where c.customerId=:custId");
+			query.setParameter("custId", 1001);
 			List rs=query.getResultList();
 			int size=rs.size();
 			
