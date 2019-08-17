@@ -1,0 +1,73 @@
+movies
+Pulp Fiction
+The Shawshank Redemption
+Back To The Future
+Forrest Gump
+Planet Of The Apes (1968)
+Terminator 2 Judgement Day
+The Good, The Bad and the Ugly
+The Usual Suspects
+The Sixth Sense
+Rocky
+Aliens
+12 Angry Men
+Saving Private Ryan
+The Deer Hunter
+Casablanca
+Gone With The Wind
+Raider Of The Lost Ark
+Avatar
+Halloween (1978)
+The Fly
+The Green Mile
+A Clockwork Orange
+The Birth Of A Nation (1915)
+Metropolis
+The Great Dictator 
+Modern Times
+Sunset Boulevard 
+Blade Runner
+Seven
+Do The Right Thing
+Blue Is The Warmest Color
+The Artist
+Eternal Sunshine Of The Spotless Mind
+Inception
+Memento
+Groundhog Day
+In The Mood For Love
+Trainspotting
+Requiem For A Dream
+American Beauty
+American History X
+The Truman Show
+Night Of The Living Dead
+Cinema Paradiso
+The Breakfast Club
+Taxi Driver
+Annie Hall
+Scarface 
+Titanic
+Chinatown
+Harold & Maude
+Midnight Cowboy
+The Graduate
+Breakfast At Tiffany's
+Breathless
+The Mirrors
+Stalker
+Some Like It Hot
+Rear Window
+The Social Network
+Apocalypse Now
+Ben-Hur (1959)
+The Jazz Singer
+Singing In The Rain
+Sound Of Music
+The Dark Knight
+The Avengers
+Toy Story
+Cinderella
+The Lion King
+Spirited Away
+Akira
