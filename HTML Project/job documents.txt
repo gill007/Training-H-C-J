@@ -1,0 +1,4 @@
+Domain: Healthcare 
+and Technology of Project
+Type of projects, quick info about the layers/Archtectures and its relevant modules
+Share details and flow on Project Functionalities

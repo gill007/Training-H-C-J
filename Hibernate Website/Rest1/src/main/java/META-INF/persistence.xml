@@ -7,6 +7,7 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider> 
         <class>com.test.Model.Login</class>
          <class>com.test.Model.Products</class>
+         <class> com.test.Model.Registration</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/rest" />
@@ -18,6 +19,7 @@
             
         </properties>
 
+ 
     </persistence-unit>
     
 </persistence>
