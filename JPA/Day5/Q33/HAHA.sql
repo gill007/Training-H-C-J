@@ -1,4 +1,4 @@
-CREATE DEFINER=`root`@`localhost` FUNCTION `jobDescription`(jobcode integer) RETURNS int(11)
+CREATE DEFINER=`root`@`localhost` FUNCTION `jobDescription`(jobcode integer) RETURNS varchar(100)
     DETERMINISTIC
 BEGIN
 declare x varchar(100);
