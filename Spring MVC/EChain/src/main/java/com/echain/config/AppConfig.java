@@ -14,6 +14,9 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import static org.hibernate.cfg.Environment.*;
 
+
+
+
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
@@ -48,7 +51,7 @@ public class AppConfig {
       props.put(C3P0_MAX_STATEMENTS, env.getProperty("hibernate.c3p0.max_statements"));
 
       factoryBean.setHibernateProperties(props);
-      factoryBean.setPackagesToScan("com.boraji.tutorial.spring.model");
+      factoryBean.setPackagesToScan("com.echain.model");
 
       return factoryBean;
    }

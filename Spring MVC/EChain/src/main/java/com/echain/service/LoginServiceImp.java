@@ -17,39 +17,34 @@ public class LoginServiceImp implements LoginService{
 	private LoginDao loginDao;
 	
 	@Transactional
-	@Override
 	public String save(LoginBean login)
 	{
-		return LoginDao.save(login);
+		return loginDao.save(login);
 	}
 	
 	@Transactional
-	@Override
 	public LoginBean get(String id)
 	{
-		return LoginDao.get(id);
+		return loginDao.get(id);
 	}
 	
 	
 	@Transactional
-	@Override
 	public List<LoginBean> list()
 	{
-		return LoginDao.list();
+		return loginDao.list();
 	}
 	
 	@Transactional
-	@Override
 	public void update(String id,LoginBean login)
 	{
-		LoginDao.update(id,login);
+		loginDao.update(id,login);
 	}
 	
 	@Transactional
-	@Override
 	public void delete(String id)
 	{
-		LoginDao.delete(id);
+		loginDao.delete(id);
 	}
 
 }
